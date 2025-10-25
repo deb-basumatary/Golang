@@ -36,6 +36,8 @@ func typeConversion() {
 }
 
 func main() {
+	// Evaluated immediately but not executed until the surrounding function returns
+	defer fmt.Println("\nExecuted at the end")
 	fmt.Println(add(2, 34))
 	fmt.Println(multiply(30, 4))
 	fmt.Println(mixedDT(2, 4, "Hola"))
